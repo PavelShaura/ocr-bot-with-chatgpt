@@ -1,0 +1,16 @@
+FROM python:3.10
+
+RUN mkdir /bot
+
+WORKDIR /bot
+
+COPY poetry.lock pyproject.toml ./
+
+RUN pip install --no-cache-dir poetry
+
+RUN poetry config virtualenvs.create false \
+    && poetry install --no-interaction --no-ansi --no-root
+
+COPY ocr_bot_chatGPT .
+
+RUN chmod a+x docker/*.sh
