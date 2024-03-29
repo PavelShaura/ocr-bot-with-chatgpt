@@ -20,11 +20,11 @@ services:
 
   bot:
     build:
-      context: ocr_bot_chatGPT
+      context: .
     env_file:
       - .env
     container_name: ocr_bot
-    command: ["/bot/docker/app.sh"]
+    command: sh -c "alembic upgrade head && python3 bot.py"
     depends_on:
       - pg
       - redis

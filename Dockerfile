@@ -11,6 +11,6 @@ RUN pip install --no-cache-dir poetry
 RUN poetry config virtualenvs.create false \
     && poetry install --no-interaction --no-ansi --no-root
 
-COPY ocr_bot_chatGPT .
+COPY . .
 
-RUN chmod a+x docker/*.sh
+#RUN chmod a+x *.sh

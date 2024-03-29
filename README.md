@@ -4,7 +4,7 @@
 
 ![Иллюстрация к проекту](https://github.com/PavelShaura/ocr-bot-with-chatgpt/blob/main/img/sample_image.png)
 
-Ссылка на бота:
+Ссылка на бота: @photo_to_text_to_chatgpt_bot
 
 ## Описание
 Задачи бота:
