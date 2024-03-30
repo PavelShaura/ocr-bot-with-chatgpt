@@ -33,7 +33,8 @@ async def user_start(message: Message) -> None:
         f"-- 🚫 <i>Не вопрос!</i> ⏬\n\n"
         f"<b>1. Просто сделайте скрин и отправьте его мне. 📸 \n"
         f"2. Я прочту всё, что там написано, и дам вам ответ! 🤖\n\n</b>"
-        f"💪 Удачи на экзамене! 😎🔥",
+        f"💪 Удачи на экзамене! 😎🔥\n\n"
+        f"<i>По всем вопросам писать администратору: </i> https://t.me/PavelShau",
         reply_markup=menu_keyboard,
         parse_mode="HTML",
     )
